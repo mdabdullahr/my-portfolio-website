@@ -27,8 +27,8 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="fixed top-0 left-0 w-full z-50 bg-transparent bg-opacity-50 backdrop-blur-xs">
-      <div className="navbar max-w-[1320px] mx-auto py-5 px-5">
+    <div data-aos="fade-down" className="fixed top-0 left-0 w-full z-50 bg-transparent bg-opacity-50 backdrop-blur-xs">
+      <div className="navbar max-w-[1320px] mx-auto  px-5 py-5 md:px-20 lg:px-4">
         <div className="navbar-start">
           <div className="dropdown">
             <div

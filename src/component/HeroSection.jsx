@@ -6,7 +6,7 @@ import patternImage from "../assets/pattrn.svg";
 
 const HeroSection = () => {
   return (
-    <div className="relative bg-[#0C0C0C] text-white pt-20 px-5 overflow-hidden">
+    <div className="relative bg-[#0C0C0C] text-white pt-20 px-5 md:px-20 lg:px-6 overflow-hidden">
       {/* Pattern Background */}
       <div className="absolute inset-0 z-0 opacity-10">
         <img
@@ -23,10 +23,10 @@ const HeroSection = () => {
           <p className="text-[28px] rajdhani-bold text-white uppercase mb-4">
             Hello
           </p>
-          <h1 className="text-[32px] lg:text-[54px] 2xl:text-7xl rajdhani-bold leading-snug">
+          <h1 className="text-[32px] md:text-[54px] 2xl:text-7xl rajdhani-bold leading-snug">
             i’m Abdullah Hossain
           </h1>
-          <h2 className="text-2xl lg:text-4xl 2xl:text-5xl rajdhani-bold leading-snug text-[#E9004C] my-5">
+          <h2 className="text-2xl md:text-4xl 2xl:text-5xl rajdhani-bold leading-snug text-[#E9004C] my-5">
             <Typewriter
               words={["MERN Stack Developer"]}
               loop={true}
@@ -37,7 +37,7 @@ const HeroSection = () => {
               delaySpeed={1000}
             />
           </h2>
-          <p className="mt-4 text-[#9F9F9F] text-[16px] md:text-lg lg:text-xl">
+          <p className="mt-4 text-[#9F9F9F] text-[16px] md:text-xl">
             A personal portfolio is a collection of your work, achievements, and
             skills that highlights your abilities and professional growth. It
             serves as a digital representation of your career.
@@ -55,7 +55,7 @@ const HeroSection = () => {
           className="flex-1 text-center relative"
         >
           <div className="absolute left-1/2 -translate-x-1/2 top-30 w-72 h-[70vh] bg-[#E9004C] rounded-full blur-3xl opacity-30 z-0"></div>
-          <motion.h2 className="absolute text-5xl lg:text-[60px] 2xl:text-[80px] text-white mt-4 lg:mt-6 left-1/2 -translate-x-1/2 top-50 w-full rajdhani-bold"
+          <motion.h2 className="absolute text-5xl md:text-[60px] 2xl:text-[80px] text-white mt-4 lg:mt-6 left-1/2 -translate-x-1/2 top-50 w-full rajdhani-bold"
           animate={{ y: [0, -20, 0] }}
             transition={{
               duration: 3,
@@ -67,10 +67,10 @@ const HeroSection = () => {
           <img
             src={profileImage}
             alt="Web Designer"
-            className="relative mx-auto h-[50vh] lg:h-[90vh] w-full object-cover -mb-20"
+            className="relative mx-auto h-[50vh] md:h-[90vh] w-full object-cover -mb-20"
           />
           <motion.h2
-            className="relative bottom-30 text-5xl lg:text-[60px] 2xl:text-[80px] text-outline outline-text rajdhani-bold"
+            className="relative bottom-30 text-5xl md:text-[60px] 2xl:text-[80px] text-outline outline-text rajdhani-bold"
             animate={{ y: [0, -10, 0] }}
             transition={{
               duration: 2,
