@@ -3,6 +3,7 @@ import HeroSection from '../../component/HeroSection';
 import AboutMe from '../AboutMe/AboutMe';
 import MySkills from '../MySkills/MySkills';
 import Projects from '../Projects/Projects';
+import ContactInfo from '../ContactInfo/ContactInfo';
 
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
             <AboutMe></AboutMe>
             <MySkills></MySkills>
             <Projects></Projects>
+            <ContactInfo></ContactInfo>
         </div>
     );
 };

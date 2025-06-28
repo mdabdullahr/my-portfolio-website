@@ -9,26 +9,52 @@ import logo from "../assets/logo.png";
 const Navbar = () => {
   const links = (
     <>
-      <li className="text-white hover:text-[#E9004C] hover:bg-[#E9004C]/20 transition-all duration-600 px-4 py-2 rounded-md cursor-pointer">
-        Home
-      </li>
-      <li className="text-white hover:text-[#E9004C] hover:bg-[#E9004C]/20 transition-all duration-600 px-4 py-2 rounded-md cursor-pointer">
-        About Me
-      </li>
-      <li className="text-white hover:text-[#E9004C] hover:bg-[#E9004C]/20 transition-all duration-600 px-4 py-2 rounded-md cursor-pointer">
-        Skills
-      </li>
-      <li className="text-white hover:text-[#E9004C] hover:bg-[#E9004C]/20 transition-all duration-600 px-4 py-2 rounded-md cursor-pointer">
-        Projects
-      </li>
-      <li className="text-white hover:text-[#E9004C] hover:bg-[#E9004C]/20 transition-all duration-600 px-4 py-2 rounded-md cursor-pointer">
-        Contact
-      </li>
-    </>
+  <li>
+    <a
+      href="#home"
+      className="text-white hover:text-[#E9004C] hover:bg-[#E9004C]/20 transition-all duration-600 px-4 py-2 rounded-md cursor-pointer"
+    >
+      Home
+    </a>
+  </li>
+  <li>
+    <a
+      href="#about"
+      className="text-white hover:text-[#E9004C] hover:bg-[#E9004C]/20 transition-all duration-600 px-4 py-2 rounded-md cursor-pointer"
+    >
+      About Me
+    </a>
+  </li>
+  <li>
+    <a
+      href="#skills"
+      className="text-white hover:text-[#E9004C] hover:bg-[#E9004C]/20 transition-all duration-600 px-4 py-2 rounded-md cursor-pointer"
+    >
+      Skills
+    </a>
+  </li>
+  <li>
+    <a
+      href="#projects"
+      className="text-white hover:text-[#E9004C] hover:bg-[#E9004C]/20 transition-all duration-600 px-4 py-2 rounded-md cursor-pointer"
+    >
+      Projects
+    </a>
+  </li>
+  <li>
+    <a
+      href="#contact"
+      className="text-white hover:text-[#E9004C] hover:bg-[#E9004C]/20 transition-all duration-600 px-4 py-2 rounded-md cursor-pointer"
+    >
+      Contact
+    </a>
+  </li>
+</>
+
   );
   return (
     <div data-aos="fade-down" className="fixed top-0 left-0 w-full z-50 bg-transparent bg-opacity-50 backdrop-blur-xs">
-      <div className="navbar max-w-[1320px] mx-auto  px-5 py-5 md:px-20 lg:px-4">
+      <div className="navbar max-w-[1320px] mx-auto px-5 py-5 md:px-20 lg:px-4">
         <div className="navbar-start">
           <div className="dropdown">
             <div
@@ -103,6 +129,13 @@ const Navbar = () => {
             className="bg-white/10 p-3 lg:p-4 rounded-full hover:bg-[#E9004C] cursor-pointer transition-all duration-600"
           >
             <FaLinkedinIn />
+          </a>
+          <a
+            href="/resume.pdf"
+            download
+            className="p-3 lg:p-4 rounded-full bg-[#E9004C] cursor-pointer"
+          >
+            <LuDownload></LuDownload>
           </a>
          
         </div>

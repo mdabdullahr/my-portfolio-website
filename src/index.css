@@ -13,6 +13,10 @@ body {
 
 .outline-text {
   color: transparent;
-  -webkit-text-stroke: 2px white; /* White border */
+  -webkit-text-stroke: 2px white;
   font-weight: 800;
+}
+
+html {
+  scroll-behavior: smooth;
 }

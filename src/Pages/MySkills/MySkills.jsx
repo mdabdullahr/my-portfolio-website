@@ -16,19 +16,22 @@ const MySkills = () => {
   const secondLine = skills.slice(6, 12);
 
   return (
-      <div data-aos="fade-up" data-aos-duration="3000" className="max-w-[1320px] mx-auto mt-20 xl:mt-30">
+    <section id="skills" className="scroll-mt-28">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="3000"
+        className="mt-20 xl:mt-30 max-w-[1320px] mx-auto"
+      >
         <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold text-white mb-10 text-center rajdhani-bold">
           My Skills
         </h2>
-
         {/* First Line - Left to Right */}
         <div className="overflow-hidden">
           <Marquee
             pauseOnHover={true}
             speed={50}
             gradient={true}
-            gradientColor={[0, 0, 0]
-} // Tailwind gray-100
+            gradientColor={[0, 0, 0]} // Tailwind gray-100
             gradientWidth="120px" // আগের থেকে বেশি shadow
           >
             <div className="flex">
@@ -38,9 +41,7 @@ const MySkills = () => {
             </div>
           </Marquee>
         </div>
-
         <div className="h-10"></div> {/* spacing */}
-
         {/* Second Line - Right to Left */}
         <div className="overflow-hidden">
           <Marquee
@@ -59,7 +60,7 @@ const MySkills = () => {
           </Marquee>
         </div>
       </div>
-    
+    </section>
   );
 };
 
