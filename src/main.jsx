@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import Home from "./Pages/Home/Home.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ProjectDetails from "./Pages/Projects/ProjectDetails.jsx";
 
 
 const router = createBrowserRouter([
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
         index: true,
         Component: Home,
       },
+      {
+        path: "project/:id",
+        Component: ProjectDetails
+      }
     ],
   },
 ]);

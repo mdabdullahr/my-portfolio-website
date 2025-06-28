@@ -1,0 +1,78 @@
+[
+  {
+    "id": "marathon-management",
+    "name": "Marathon Management System",
+    "image": {
+      "img1": "https://i.ibb.co/dsrbTjSf/Screenshot-28.png",
+      "img2": "https://i.ibb.co/wZK9pDkR/Screenshot-29.png",
+      "img3": "https://i.ibb.co/Qvyt72B2/Screenshot-30.png"
+    },
+    "techStack": ["React", "Tailwind", "DaisyUI", "Node.js", "Express", "MongoDB", "JWT"],
+    "description": "A full-stack web app to create, explore, and register for marathons. Features include countdown, role-based dashboard, search/sort integration.",
+    "liveLink": "https://marathons-management.web.app/",
+    "githubLinks": {
+      "frontend": "https://github.com/mdabdullahr/marathon-management-client-repo",
+      "backend": "https://github.com/yourusername/marathon-management-server"
+    },
+    "challenges": "Handling dynamic registration period with countdown.",
+    "futurePlans": "Add downloadable certificates, email notifications, and race result tracking.",
+    "mainFeatures": [
+      "User registration and login with JWT",
+      "Marathon creation with date & time",
+      "Dynamic countdown for registration deadlines",
+      "User dashboard for registrations",
+      "Search & sort marathons by title/date"
+    ]
+  },
+  {
+    "id": "hobbyhub",
+    "name": "HobbyHub",
+    "image": {
+      "img1": "https://i.ibb.co/yBMhfXgj/Screenshot-33.png",
+      "img2": "https://i.ibb.co/67NxjrJ3/Screenshot-32.png",
+      "img3": "https://i.ibb.co/HL1YBYsL/Screenshot-31.png"
+    },
+    "techStack": ["React", "Tailwind", "DaisyUI", "Node.js", "Express", "MongoDB", "Firebase"],
+    "description": "A hobby group organizer platform that allows users to create, join, and manage hobby groups with secure authentication.",
+    "liveLink": "https://hobby-hub-auth.web.app/",
+    "githubLinks": {
+      "frontend": "https://github.com/mdabdullahr/hobby-hub-client-repo",
+      "backend": "https://github.com/mdabdullahr/hobby-hub-server-repo"
+    },
+    "challenges": "Controlling private group joining, maintaining user/group relation, and secure access.",
+    "futurePlans": "Add group chat, calendar sync, and group event planning tools.",
+    "mainFeatures": [
+      "Group creation and join feature",
+      "User role-based access (admin/user)",
+      "Private group access control",
+      "Group details with description and members",
+      "User dashboard to manage groups",
+      "Firebase authentication system"
+    ]
+  },
+  {
+    "id": "event-explorer",
+    "name": "Event Explorer",
+    "image": {
+      "img1": "https://i.ibb.co/0jy965Yj/Screenshot-27.png",
+      "img2": "https://i.ibb.co/SDZ2HTM8/Screenshot-28.png",
+      "img3": "https://i.ibb.co/n8cCRPcL/Screenshot-29.png"
+    },
+    "techStack": ["React", "Tailwind", "DaisyUI", "Firebase", "Express", "MongoDB"],
+    "description": "An event listing and discovery platform where users can browse, search, and view details of various local events.",
+    "liveLink": "https://event-explore-e54a1.web.app/",
+    "githubLinks": {
+      "frontend": "https://github.com/mdabdullahr/event-explore-repo",
+      "backend": "https://github.com/mdabdullahr/event-explore-repo"
+    },
+    "challenges": "Handling real-time search/sort logic and event filtering based on category and date.",
+    "futurePlans": "Add bookmarking, user feedback/review system, and shareable event posters.",
+    "mainFeatures": [
+      "Event listing with filtering options",
+      "Search events by title or location",
+      "Responsive event cards with details",
+      "Detailed event page with description",
+      "User login and event feedback system"
+    ]
+  }
+]
