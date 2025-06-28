@@ -156,7 +156,7 @@ const Projects = () => {
 
                   <button
                     onClick={() => openModal(project)}
-                    className="text-white bg-[#E9004C] px-5 rounded-full text-lg py-2"
+                    className="text-white bg-[#E9004C] px-5 rounded-full text-lg py-2 cursor-pointer"
                   >
                     Details
                   </button>

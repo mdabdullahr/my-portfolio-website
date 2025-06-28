@@ -15,6 +15,7 @@ const MySkills = () => {
   const firstLine = skills.slice(0, 6);
   const secondLine = skills.slice(6, 12);
 
+
   return (
     <section id="skills" className="scroll-mt-28">
       <div

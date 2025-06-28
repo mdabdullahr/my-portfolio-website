@@ -45,9 +45,9 @@ const HeroSection = () => {
               />
             </h2>
             <p className="mt-4 text-[#9F9F9F] text-[16px] md:text-xl">
-              A personal portfolio is a collection of your work, achievements,
-              and skills that highlights your abilities and professional growth.
-              It serves as a digital representation of your career.
+              I love building clean, modern, and responsive full-stack web applications.
+              I enjoy solving real-world problems through code and continuously 
+              learning new technologies to improve my craft.
             </p>
              <div className="flex gap-5 flex-wrap">
               <a href="/resume.pdf" download>

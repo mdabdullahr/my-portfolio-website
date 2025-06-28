@@ -7,6 +7,7 @@ import ContactInfo from '../ContactInfo/ContactInfo';
 
 
 const Home = () => {
+    
     return (
         <div className='bg-[#0C0C0C] px-5'>
             <HeroSection></HeroSection>

@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 
 const AboutMe = () => {
+  
   return (
     <section id="about" className="scroll-mt-28">
       <div
