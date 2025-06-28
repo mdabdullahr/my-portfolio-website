@@ -6,7 +6,7 @@ import patternImage from "../assets/pattrn.svg";
 
 const HeroSection = () => {
   return (
-    <div className="relative bg-[#0C0C0C] text-white pt-20 px-5 md:px-20 lg:px-6 overflow-hidden">
+    <div className="relative text-white pt-20 px-0  md:px-20 lg:px-0 overflow-hidden">
       {/* Pattern Background */}
       <div className="absolute inset-0 z-0 opacity-10">
         <img
