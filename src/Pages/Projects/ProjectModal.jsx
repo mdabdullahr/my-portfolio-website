@@ -13,12 +13,12 @@ const ProjectModal = ({ project, onClose }) => {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-[#0C0C0C] bg-opacity-70 p-4"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-[#0C0C0C] bg-opacity-70 p-0 md:p-4"
       onClick={handleOverlayClick}
     >
       <div
         onClick={handleContentClick}
-        className="bg-[#E9004C]/5 text-white p-6 rounded-lg max-w-[1320px] w-full h-screen overflow-y-auto relative mx-auto"
+        className="bg-[#E9004C]/5 text-white p-4 md:p-6 rounded-lg max-w-[1320px] w-full h-screen overflow-y-auto relative mx-auto"
       >
         {/* Close Button */}
         <button

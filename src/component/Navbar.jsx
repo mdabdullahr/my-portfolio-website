@@ -105,7 +105,7 @@ const Navbar = () => {
           <a
             href="https://www.facebook.com/md.abdullah.hossain.16133"
             target="_blank"
-            className="bg-white/10 p-3 lg:p-4 rounded-full hover:bg-[#E9004C] cursor-pointer transition-all duration-600"
+            className="bg-white/10 p-3 lg:p-4 rounded-full hover:bg-[#E9004C] cursor-pointer transition-all duration-600 hidden md:flex"
           >
             <FaFacebookF />
           </a>

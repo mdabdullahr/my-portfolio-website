@@ -56,7 +56,7 @@ const HeroSection = () => {
               </button>
               </a>
              <a href="/resume.pdf" target="_blank">
-              <button className="mt-10 bg-[#E9004C] text-white cursor-pointer px-10 py-4 text-[16px] rounded-full flex items-center">
+              <button className="mt-10 bg-[#E9004C] text-white cursor-pointer px-10 py-4 text-[16px] rounded-full hidden md:flex items-center">
                Resume <FaEye className="ml-2" size={20} />
               </button>
               </a>

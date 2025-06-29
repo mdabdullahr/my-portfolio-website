@@ -42,7 +42,9 @@ const ContactInfo = () => {
         <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold text-white mb-10 text-center rajdhani-bold">
           Contact
         </h2>
-        <div className="border-2 border-[#E9004C]/10 rounded-xl flex flex-col md:flex-row  gap-4 lg:gap-8 p-4 lg:p-8">
+        <div className="border-2 border-[#E9004C]/10 rounded-xl flex flex-col md:flex-row  gap-4 lg:gap-8 p-0 md:p-4 lg:p-6 xl:p-8">
+
+        {/* left section*/}
           <div
             data-aos="zoom-in"
             data-aos-duration="3000"
@@ -52,33 +54,33 @@ const ContactInfo = () => {
               <PiPhoneCallFill className="text-[#E9004C]" /> Contact Information
             </h3>
 
-            <div className="bg-[#0C0C0C] m-8 rounded-xl h-[65%] border-2 border-[#E9004C]/10">
-              <div className="p-8 space-y-4">
-                <p className=" text-lg text-[#9F9F9F]">
+            <div className="bg-[#0C0C0C] m-2 md:m-4 xl:m-8 rounded-xl h-[65%] border-2 border-[#E9004C]/10">
+              <div className="p-4 md:p-8 space-y-4">
+                <p className="text-sm md:text-lg text-[#9F9F9F]">
                   <span className="font-semibold">Full Name : </span> Abdullah
                   Hossain
                 </p>
-                <p className=" text-lg text-[#9F9F9F]">
+                <p className="text-sm md:text-lg text-[#9F9F9F]">
                   <span className="font-semibold">Address : </span> Satkhira,
                   Bangladesh
                 </p>
-                <p className=" text-lg text-[#9F9F9F]">
+                <p className="text-sm md:text-lg text-[#9F9F9F]">
                   <span className="font-semibold">Mobile : </span>{" "}
                   +8801768262031
                 </p>
-                <p className=" text-lg text-[#9F9F9F]">
+                <p className="text-sm md:text-lg text-[#9F9F9F]">
                   <span className="font-semibold">WatsApp :</span>{" "}
                   +8801927785731
                 </p>
-                <p className=" text-lg text-[#9F9F9F]">
-                  <span className="font-semibold">Email :</span>{" "}
+                <p className="text-sm md:text-lg text-[#9F9F9F]">
+                  <span className="font-semibold flex flex-wrap overflow-x-hidden">Email :</span>{" "}
                   mdabdullah162005@gmail.com
                 </p>
                 <div className="flex flex-col md:flex-row items-center gap-5 flex-wrap">
-                  <p className=" text-lg text-[#9F9F9F]">
+                  <p className="text-sm md:text-lg text-[#9F9F9F]">
                     <span className="font-semibold">social :</span>{" "}
                   </p>
-                  <div className="navbar-end gap-2 md:gap-5">
+                  <div className="gap-2 md:gap-5 flex flex-wrap">
                     <a
                       href="https://www.facebook.com/md.abdullah.hossain.16133"
                       target="_blank"
@@ -113,18 +115,19 @@ const ContactInfo = () => {
             </div>
           </div>
 
+ {/* Right section */}
           <div
             data-aos="zoom-in"
             data-aos-duration="3000"
-            className="bg-[#E9004C]/2 flex-1 rounded-xl p-8"
+            className="bg-[#E9004C]/2 flex-1 rounded-xl p-2 sm:px-4 md:p-8"
           >
-            <form ref={form} onSubmit={sendEmail} className="space-y-8">
+            <form ref={form} onSubmit={sendEmail} className="space-y-4 md:space-y-8">
               <div>
                 <input
                   type="text"
                   name="name"
                   required
-                  className="w-full px-8 py-2 rounded-xl focus:outline-none h-16 bg-[#0C0C0C]  text-white text-lg focus:outline-0 border-2 border-[#E9004C]/10"
+                  className="w-full px-2 sm:px-4 md:px-8 py-2 rounded-xl focus:outline-none h-16 bg-[#0C0C0C]  text-white text-lg focus:outline-0 border-2 border-[#E9004C]/10"
                   placeholder="Name"
                 />
               </div>
@@ -133,7 +136,7 @@ const ContactInfo = () => {
                   type="email"
                   name="email"
                   required
-                  className="w-full px-8 py-2 rounded-xl focus:outline-none h-16 bg-[#0C0C0C]  text-white text-lg focus:outline-0 border-2 border-[#E9004C]/10"
+                  className="w-full px-2 sm:px-4 md:px-8 py-2 rounded-xl focus:outline-none h-16 bg-[#0C0C0C]  text-white text-lg focus:outline-0 border-2 border-[#E9004C]/10"
                   placeholder="email"
                 />
               </div>
@@ -143,7 +146,7 @@ const ContactInfo = () => {
                   name="message"
                   rows="7"
                   required
-                  className="w-full px-8 py-5 rounded-xl bg-[#0C0C0C] text-white text-lg focus:outline-0 border-2 border-[#E9004C]/10"
+                  className="w-full px-2 sm:px-4 md:px-8 py-5 rounded-xl bg-[#0C0C0C] text-white text-lg focus:outline-0 border-2 border-[#E9004C]/10"
                   placeholder="Write your message here..."
                 ></textarea>
               </div>
