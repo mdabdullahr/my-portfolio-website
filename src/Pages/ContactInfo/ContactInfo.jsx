@@ -14,7 +14,7 @@ const ContactInfo = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_hvf3r0c", "template_vp3cwzw", form.current, {
+      .sendForm("service_prt5r0p", "template_gl4ib4l", form.current, {
         publicKey: "GW_yzCUwulWFpTrrZ",
       })
       .then(
