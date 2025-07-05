@@ -31,7 +31,7 @@ const HeroSection = () => {
               Hello
             </p>
             <h1 className="text-[32px] md:text-[54px] 2xl:text-7xl rajdhani-bold leading-snug">
-              i’m Abdullah Hossain
+              i’m Abdullah
             </h1>
             <h2 className="text-2xl md:text-4xl 2xl:text-5xl rajdhani-bold leading-snug text-[#E9004C] my-5">
               <Typewriter

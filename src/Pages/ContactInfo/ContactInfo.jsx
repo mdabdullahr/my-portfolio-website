@@ -14,8 +14,8 @@ const ContactInfo = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_m86ygme", "template_c9tjraf", form.current, {
-        publicKey: "HYqVXlzLceJ5Gf-3n",
+      .sendForm("service_hvf3r0c", "template_vp3cwzw", form.current, {
+        publicKey: "GW_yzCUwulWFpTrrZ",
       })
       .then(
         () => {
@@ -58,7 +58,6 @@ const ContactInfo = () => {
               <div className="p-4 md:p-8 space-y-4">
                 <p className="text-sm md:text-lg text-[#9F9F9F]">
                   <span className="font-semibold">Full Name : </span> Abdullah
-                  Hossain
                 </p>
                 <p className="text-sm md:text-lg text-[#9F9F9F]">
                   <span className="font-semibold">Address : </span> Satkhira,
@@ -74,7 +73,7 @@ const ContactInfo = () => {
                 </p>
                 <p className="text-sm md:text-lg text-[#9F9F9F]">
                   <span className="font-semibold flex flex-wrap overflow-x-hidden">Email :</span>{" "}
-                  mdabdullah162005@gmail.com
+                  abdullahhossain.dev@gmail.com
                 </p>
                 <div className="flex flex-col md:flex-row items-center gap-5 flex-wrap">
                   <p className="text-sm md:text-lg text-[#9F9F9F]">
