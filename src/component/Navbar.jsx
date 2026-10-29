@@ -4,50 +4,75 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { LuDownload } from "react-icons/lu";
+import { Link, useLocation } from "react-router";
 import logo from "../assets/logo.png";
 
 const Navbar = () => {
+  const location = useLocation();
+
+  const handleSectionClick = (sectionId) => {
+    if (location.pathname !== "/") return;
+
+    window.requestAnimationFrame(() => {
+      document.getElementById(sectionId)?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    });
+  };
+
+  const handleLogoClick = () => {
+    if (location.pathname === "/") {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    }
+  };
+
   const links = (
     <>
   <li>
-    <a
-      href="#home"
+    <Link
+      to="/#home"
+      onClick={() => handleSectionClick("home")}
       className="text-white hover:text-[#E9004C] hover:bg-[#E9004C]/20 transition-all duration-600 px-4 py-2 rounded-md cursor-pointer"
     >
       Home
-    </a>
+    </Link>
   </li>
   <li>
-    <a
-      href="#about"
+    <Link
+      to="/#about"
+      onClick={() => handleSectionClick("about")}
       className="text-white hover:text-[#E9004C] hover:bg-[#E9004C]/20 transition-all duration-600 px-4 py-2 rounded-md cursor-pointer"
     >
       About Me
-    </a>
+    </Link>
   </li>
   <li>
-    <a
-      href="#skills"
+    <Link
+      to="/#skills"
+      onClick={() => handleSectionClick("skills")}
       className="text-white hover:text-[#E9004C] hover:bg-[#E9004C]/20 transition-all duration-600 px-4 py-2 rounded-md cursor-pointer"
     >
       Skills
-    </a>
+    </Link>
   </li>
   <li>
-    <a
-      href="#projects"
+    <Link
+      to="/#projects"
+      onClick={() => handleSectionClick("projects")}
       className="text-white hover:text-[#E9004C] hover:bg-[#E9004C]/20 transition-all duration-600 px-4 py-2 rounded-md cursor-pointer"
     >
       Projects
-    </a>
+    </Link>
   </li>
   <li>
-    <a
-      href="#contact"
+    <Link
+      to="/#contact"
+      onClick={() => handleSectionClick("contact")}
       className="text-white hover:text-[#E9004C] hover:bg-[#E9004C]/20 transition-all duration-600 px-4 py-2 rounded-md cursor-pointer"
     >
       Contact
-    </a>
+    </Link>
   </li>
 </>
 
@@ -85,7 +110,12 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <div className="flex items-center">
+          <Link
+            to="/"
+            onClick={handleLogoClick}
+            className="navbar-home-link flex items-center"
+            aria-label="Abdullah - Home"
+          >
             <img
               className="w-6 h-6 lg:h-10 lg:w-10 mr-2"
               src={logo}
@@ -94,7 +124,7 @@ const Navbar = () => {
             <h3 className="text-2xl md:text-3xl lg:text-4xl rajdhani-bold font-bold text-white hidden md:block">
               Abdullah
             </h3>
-          </div>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 rajdhani-bold text-[16px] gap-6">
@@ -124,15 +154,16 @@ const Navbar = () => {
             <BsGithub />
           </a>
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/abdullah-programmer"
             target="_blank"
+            rel="noopener noreferrer"
             className="bg-white/10 p-3 lg:p-4 rounded-full hover:bg-[#E9004C] cursor-pointer transition-all duration-600"
           >
             <FaLinkedinIn />
           </a>
           <a
-            href="/resume.pdf"
-            download
+            href="/Abdullah-Resume.pdf"
+            download="Abdullah-Resume.pdf"
             className="p-3 lg:p-4 rounded-full bg-[#E9004C] cursor-pointer"
           >
             <LuDownload></LuDownload>

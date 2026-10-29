@@ -4,6 +4,7 @@ import "./index.css";
 import MainLayout from "./Layout/MainLayout.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import Home from "./Pages/Home/Home.jsx";
+import ProjectDetails from "./Pages/Projects/ProjectDetails.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         index: true,
         Component: Home,
+      },
+      {
+        path: "projects/:slug",
+        Component: ProjectDetails,
       },
     ],
   },
